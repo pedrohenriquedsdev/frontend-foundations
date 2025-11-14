@@ -4,41 +4,54 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- “Faça a viewport (a parte visível da página) ter a mesma largura da tela real do dispositivo, e mostre tudo no tamanho normal (sem zoom).” -->
     <link rel="shortcut icon" href="images/javascript.png" type="image/x-icon">
-    <title>Parágrafos</title>
+    <title>Site Inicial</title>
+
+    <style>
+        #heading {
+            background: rgb(241, 241, 231);
+        }
+
+        .fundo-vermelho {
+            background-color: rgb(231, 210, 23);
+        }
+
+        .bold {
+            background: rgb(224, 224, 224);
+        }
+
+        
+    </style>
 </head>
 
 <body>
     
-    <h1>Parágrafos e Quebras de Linha 1</h1> <!-- Tittle 1 -->
+    <h1 id="heading">Parágrafos e Quebras de Linha 1</h1> <!-- Tittle 1 -->
 
-    <h2>Testando Subtitle 2</h2> <!-- Tittle 2 -->
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-        Consectetur voluptatem quidem veniam non temporibus delectus! 
-        Veritatis ad numquam iste aut eaque nobis, optio possimus debitis cum unde esse alias ducimus!</p>
+    <h2 id="heading2" class="fundo-vermelho">Parágrafo 1</h2> <!-- Tittle 2 -->
+    <p>Deixo aqui a documentação completa do <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">JavaScript</a></p>
 
-    <h3>Testando Subtitle 3</h3> <!-- Tittle 3 -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    <h2 class="fundo-vermelho">Parágrafo 2</h3> <!-- Tittle 3 -->
+    <p>Lorem ipsum dolor sit <del>met</del> <ins>meet</ins> consectetur adipisicing elit. 
         Reiciendis recusandae corporis provident quo neque quaerat facilis eligendi perferendis temporibus. 
-        Nemo ut voluptatibus explicabo sapiente, tenetur eveniet labore sequi voluptatum nobis.</p>
+        Nemo ut <b class="bold">voluptatibus explicabo sapiente,</b> tenetur eveniet labore sequi voluptatum nobis.</p>
 
 
     <hr> <!-- Break -->
-    <!-- Parágrafo --> <p>Priemira linha <br>
-    Segunda linha <br> 
-    Aqui acabou</p>
+    <!-- Parágrafo --> <p>Frase com Quebra de linha!<br> 
+    Aqui de novo!</p>
 
     <hr>
 
-    <p>Add Emojis: &#x1F914 </p>
-
-    <hr>
-
-    <p>Imagem pequena: 
-        <br> <img src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-icon-svg-download-png-1174949.png?f=webp&w=128" alt=""></p> <!-- Inserindo img -->
-
-    <p>Gerando Imagem: <img src="images/javascript.png" alt="Logo JS"> </p>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+             <img src="https://static.vecteezy.com/system/resources/previews/027/127/560/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="Logo JS" width="200">
+        </a>
+    
+    <a href="https://www.firefox.com/pt-BR/?utm_campaign=SET_DEFAULT_BROWSER" target="_blank">
+        <img src="https://media.wired.com/photos/5955ab6aad90646d424bb2ce/3:2/w_1280,c_limit/mozilla-firefox-logo-S.jpg" alt="Logo mozilla" width="280" height="200">
+    </a>
+    
 
 </body>
 </html>
