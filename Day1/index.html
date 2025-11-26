@@ -1,18 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head> <!-- metadados são inseridos na tag head -->
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <!-- Método de codificação, ou seja, transforma a nossa linguagem em simbólos computacionais! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Tamanho real da tela, não importando o tamanho do dispositivo!-->
-    <title>Primeiro Site</title>
+    <title>Netflix</title>
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            background-image: url(https://wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg); 
+            background-size: cover; 
+            background-position: top center;
+        }
+
+        #heading {
+            background-color: rgb(15, 14, 14);
+        }
+    
+        
+        #heading div{ 
+            width: 100px;
+            justify-content: space-between;
+            display: flex;
+            background-color: rgb(197, 197, 197);
+            margin: 0 auto;
+            padding: 0 20px;        }
+
+        #heading .h1{
+            padding: 15px 0;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        #heading a{
+            color: white;
+            text-decoration: none;
+            font-family: sans;
+        }
+
+        
+    </style>
+
 </head>
-
 <body>
-    <h1>Cabeçalho Introdutório!</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vero ea ducimus labore dolorem hic earum
-        doloremque quidem soluta nostrum? Inventore veniam fugiat ad at beatae, esse sit excepturi voluptate?</p>
+    
+    <header id="heading">
+        <div>
+        <h1 class="h1">
+            <a href="#">Netflix</a>
+            </h1>
+         <h2 class="h1">
+            <a href="#">Netflix</a>
+        </h2></div>
+    </header>
 </body>
-
 </html>
