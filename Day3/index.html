@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Completo de Tabela</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin: 50px auto;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #a7df10;
+    }
+    tfoot {
+      background-color: #a4afac;
+      font-weight: bold;
+    }
+    col:nth-child(1) { background-color: #e6f7ff; }
+    col:nth-child(3) { background-color: #fdffe6; }
+  </style>
+</head>
+<body>
+
+<table>
+  <caption>Lista de Alunos e Notas</caption>
+  
+  <colgroup>
+    <col>         <!-- Coluna 1 -->
+    <col>         <!-- Coluna 2 -->
+    <col>         <!-- Coluna 3 -->
+  </colgroup>
+
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Curso</th>
+      <th>Nota</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Maria</td>
+      <td>Matemática</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td>João</td>
+      <td>Física</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <td>Ana</td>
+      <td>Química</td>
+      <td>92</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="2">Média Geral</td>
+      <td>91,7</td>
+    </tr>
+  </tfoot>
+</table>
+
+</body>
+</html>
