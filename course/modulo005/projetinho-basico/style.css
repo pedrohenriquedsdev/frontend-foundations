@@ -11,21 +11,47 @@ body {
     font-size: 1em;
     background-color: rgb(179, 172, 172);
     height: 100vw;
-    width: 100vw;
+    width: 99vw;
 }
 
 header {
     background-color: rgb(101, 100, 100);
     color: rgb(238, 238, 238);
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header>h1 {
-    border: 1px dotted black;
+    flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.219);
 }
 
 header>nav {
-    border: 1px dotted black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+}
+
+header>nav>a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+header>nav>a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: background-color .2s;
 }
 
 main {
