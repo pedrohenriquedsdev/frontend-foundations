@@ -1,0 +1,60 @@
+@charset "UTf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+section {
+    border: 3px solid oklch(44.6% 0.03 256.802);
+    border-radius: 5px;
+    display: flex;
+    flex-basis: 250px;
+    flex-grow: 1;
+    max-width: 80%;
+    flex-direction: column;
+}
+
+ul {
+    margin: 30px;
+}
+
+.salary {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: oklch(55.2% 0.016 285.938);
+    color: white;
+    padding: 10px;
+}
+
+h3 {
+    margin: 20px;
+    background-color: oklch(72.3% 0.219 149.579);
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+section:nth-child(3) h2 {
+    background-color: rgb(226, 137, 3);
+}
