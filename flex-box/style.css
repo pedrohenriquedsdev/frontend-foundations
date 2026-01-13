@@ -1,4 +1,4 @@
-@charset "UTf-8";
+@charset "UTF-8";
 
 * {
     margin: 0px;
@@ -6,55 +6,32 @@
     box-sizing: border-box;
 }
 
-body {
-
+.flex-container {
+    background-color: yellow;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-main {
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
+    /* Define Main Axis */
+    justify-content: flex-start;
+    /* Ajusta conforme Main Axis */
+    align-items: baseline;
+    /* Ajusta items conforme Cross Axis */
+    align-content: flex-start;
+    /* Alinha linhas conforme Cross Axis*/
     flex-wrap: wrap;
-    gap: 10px;
+    /* Define se quebra linha ou não */
+    flex-flow: row wrap;
+    /* Shorthand -> direction & wrap*/
+    gap: 30px;
+    padding: 30px;
 }
 
-section {
-    border: 3px solid oklch(44.6% 0.03 256.802);
-    border-radius: 5px;
-    display: flex;
-    flex-basis: 250px;
+.flex-item {
+    background-color: pink;
     flex-grow: 1;
-    max-width: 80%;
-    flex-direction: column;
+    flex-shrink: 1;
 }
 
-ul {
-    margin: 30px;
-}
-
-.salary {
-    display: flex;
-    align-items: center;
-}
-
-h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    background-color: oklch(55.2% 0.016 285.938);
-    color: white;
-    padding: 10px;
-}
-
-h3 {
-    margin: 20px;
-    background-color: oklch(72.3% 0.219 149.579);
-    color: white;
-    padding: 3px;
-    border-radius: 3px;
-}
-
-section:nth-child(3) h2 {
-    background-color: rgb(226, 137, 3);
+.flex-item:last-child {
+    /* height: 150px;*/
+    flex-basis: 100%
 }
