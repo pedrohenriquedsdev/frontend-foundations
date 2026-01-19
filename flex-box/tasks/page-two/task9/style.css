@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1 1 300px;
+    max-width: 300px;
+    padding: 16px;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
