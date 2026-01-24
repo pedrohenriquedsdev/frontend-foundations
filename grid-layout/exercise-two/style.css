@@ -1,0 +1,7 @@
+.container {
+    background-color: salmon;
+
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 1fr 400px;
+
+}
