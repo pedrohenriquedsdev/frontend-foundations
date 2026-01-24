@@ -1,0 +1,28 @@
+.container {
+    height: 500px;
+    background-color: rgb(214, 214, 219);
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 70px 300px 70px;
+
+}
+
+.item:nth-child(1) {
+    display: grid;
+    background-color: saddlebrown;
+    grid-column: 1 / span 3;
+    grid-row: 1 / 2;
+}
+
+.item:nth-child(2) {
+    background-color: rgb(199, 157, 128);
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+.item:nth-child(3) {
+    background-color: rgb(216, 90, 0);
+    grid-column: 1 / -1;
+    grid-row: 3 / span 1;
+}
