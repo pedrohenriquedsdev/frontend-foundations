@@ -1,9 +1,0 @@
-.container {
-    background-color: lightblue;
-
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    /* Divide a tela em frações. Atentar-se a misturas! */
-    grid-template-rows: 100px 100px;
-    gap: 10px;
-}
