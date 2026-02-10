@@ -9,11 +9,19 @@
 
 <body>
 
-    <form>
-        <label for="check">Li e aceito os termos</label>
-        <input required type="checkbox" name="aceito_termos" value="true" id="check">
+    <form action="#">
 
-        <button type="submit">Enviar</button>
+        <label for="plano_basico">Básico</label>
+        <input required type="radio" name="plano" id="plano_basico" value="basico">
+        <br>
+        <label for="plano_pro">Pro</label>
+        <input type="radio" name="plano" id="plano_pro" value="pro">
+        <br>
+        <label for="plano_premium">Premium</label>
+        <input type="radio" name="plano" id="plano_premium" value="premium">
+        <br>
+        <button type="submit" id="submit">Enviar</button>
+
     </form>
 
 </body>
